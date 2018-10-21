@@ -22,13 +22,16 @@ zstyle ':completion:*' list-colors 'exfxcxdxbxegedabagacad'
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
-autoload -U colors
-colors
+# will be done by 'minimal'
+# autoload -U colors
+# colors
+
+source ~/Documents/config/minimal/minimal.zsh
 
 # set prompt, compare
 # https://superuser.com/questions/1108413/zsh-prompt-with-current-working-directory
 # export PS1='%F{red}%m%f %2d$ '
-export PS1='%F{magenta}%n%f@%F{yellow}%m%f %F{green}%2d%f $ '
+# export PS1='%F{magenta}%n%f@%F{yellow}%m%f %F{green}%2d%f $ '
 
 # as per https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Zsh
 autoload -Uz vcs_info
