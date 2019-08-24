@@ -70,3 +70,5 @@ set t_Co=256
 " let g:solarized_contrast = "high"
 colorscheme solarized
 
+" tab / spaces
+set softtabstop=2

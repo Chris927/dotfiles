@@ -6,6 +6,9 @@ setopt appendhistory autocd
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
+# Enables the '#' char to do comments on the command line
+setopt interactivecomments
+
 # Enable history search
 bindkey '^R' history-incremental-search-backward
 
@@ -75,4 +78,19 @@ export EDITOR=vim
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+# [[ -f /Users/chris/.npm/_npx/20012/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/chris/.npm/_npx/20012/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
+
+# export PATH="$HOME/.symfony/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/chris/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/chris/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/chris/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/chris/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH=$PATH:~/bin
+
