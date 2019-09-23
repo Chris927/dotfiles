@@ -9,6 +9,7 @@
 ## Issues
 
 - Currently hard coded file path linking to `subnixr/minimal`'s zshrc setup.
+- Had to patch `/etc/zprofile`, see [this answer](https://apple.stackexchange.com/a/248820).
 
 ## Prerequisites
 
