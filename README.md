@@ -9,6 +9,38 @@
 ## Issues
 
 - Currently hard coded file path linking to `subnixr/minimal`'s zshrc setup.
+- Had to patch `/etc/zprofile`, see [this answer](https://apple.stackexchange.com/a/248820).
+
+## Prerequisites
+
+Install dependencies via [brew](https://brew.sh/):
+
+```
+brew install zsh tmux fasd
+```
+
+Under "System Preferences > Users & Groups", change your login shell to `/usr/local/bin/zsh`.
+
+Install iterm2?
+
+Clone this repo (and its dependency) to the currently fixed location:
+
+```
+mkdir ~/Documents/config
+git clone https://github.com/Chris927/dotfiles ~/Documents/config/dotfiles
+git clone https://github.com/subnixr/minimal ~/Documents/config/minimal
+```
+
+Link files:
+
+```bash
+ln -s ~/Documents/config/dotfiles/dot-zshrc ~/.zshrc
+ln -s ~/Documents/config/dotfiles/dot-gitignore ~/.gitignore
+ln -s ~/Documents/config/dotfiles/dot-gitconfig ~/.gitconfig
+ln -s ~/Documents/config/dotfiles/dot-vimrc ~/.vimrc
+ln -s ~/Documents/config/dotfiles/tmux.conf ~/.tmux.conf
+```
+
 
 ## Notes
 
