@@ -18,6 +18,11 @@ bindkey '^R' history-incremental-search-backward
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/chris/.zshrc'
 
+# Add auto completion for selected tools, based on where we expect
+# the dorfiles repo to live
+ln -fs /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion ~/Documents/config/dotfiles/zsh-completion/_docker || false
+fpath=(~/Documents/config/dotfiles/zsh-completion $fpath)
+
 autoload -Uz compinit && compinit
 # End of lines added by compinstall
 
