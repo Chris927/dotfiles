@@ -1,4 +1,5 @@
 ctags
 tags
-.vscode
 .DS_Store
+*.hprof
+notes-chris

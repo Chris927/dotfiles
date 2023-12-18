@@ -72,3 +72,7 @@ set t_Co=256
 
 " tab / spaces
 set softtabstop=2
+
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
